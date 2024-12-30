@@ -52,30 +52,93 @@
   flex-direction: row;
 }
 
-.estetica {
+.estetica-background {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefaef;
+}
+.estetica-background .estetica {
   display: flex;
   flex-direction: column;
   max-width: 1240px;
   margin: auto;
   text-align: center;
 }
-.estetica h3 {
+.estetica-background .estetica h3 {
   margin-top: 7dvh;
   margin-bottom: 5dvh;
   font-size: 1.5rem;
   color: #363636;
 }
-.estetica p {
+.estetica-background .estetica p {
   color: #808285;
   margin-bottom: 5dvh;
 }
-.estetica .card-grid {
+.estetica-background .estetica .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3dvh;
 }
-.estetica .card-grid .card {
+.estetica-background .estetica .card-grid .card {
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
   border-radius: 2dvh;
   overflow: hidden;
+}
+.estetica-background .estetica .card-grid .card img {
+  transition: transform 0.8s;
+  z-index: 8;
+}
+.estetica-background .estetica .card-grid .card img:hover {
+  transform: scale(1.1);
+}
+.estetica-background .estetica .card-grid .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.estetica-background .estetica .card-grid .card .card-body h4 {
+  font-size: 1.3rem;
+  color: #363636;
+  margin-top: 2dvh;
+}
+.estetica-background .estetica .card-grid .card .card-body p {
+  margin-top: 2dvh;
+}
+.estetica-background .estetica .card-grid .card .card-body button {
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 2dvh;
+  height: 5dvh;
+  width: 25dvh;
+  border: none;
+  border-radius: 2dvh;
+  background-color: #f68e5f;
+  color: #fff;
+  transition: opacity 0.8s;
+}
+.estetica-background .estetica .card-grid .card .card-body button:hover {
+  opacity: 50%;
+}
+.estetica-background .estetica button {
+  height: 6dvh;
+  width: 35dvh;
+  margin: 0 auto;
+  margin-top: 5dvh;
+  border: none;
+  border-radius: 3dvh;
+  background-color: #f68e5f;
+  color: #fff;
+  transition: opacity 0.8s;
+}
+.estetica-background .estetica button:hover {
+  opacity: 50%;
+}
+
+.procedimentos-background {
+  background-color: #f2f2f2;
+}
+.procedimentos-background .slider {
+  margin: 0;
+  width: 800px;
+  height: 400px;
 }/*# sourceMappingURL=main.css.map */

@@ -46,4 +46,7 @@ header nav .nav-btn button {
 }
 header nav .nav-btn button:hover {
   color: #23A455;
+}
+header .banner {
+  filter: brightness(50%);
 }/*# sourceMappingURL=header.css.map */

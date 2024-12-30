@@ -28,10 +28,10 @@
         flex-direction: column;
         margin-left: 5dvh;
         text-align: center;
-        
+
         h2 {
             color: $text;
-            font-size: 1.3rem; 
+            font-size: 1.3rem;
         }
 
         p {
@@ -43,7 +43,7 @@
             height: 20dvh;
             object-fit: cover;
         }
-        
+
         .depilacao {
             display: flex;
             flex-direction: row;
@@ -61,38 +61,108 @@
     }
 }
 
-.estetica {
+.estetica-background {
     display: flex;
     flex-direction: column;
-    max-width: 1240px;
-    margin: auto;
-    text-align: center;
+    background-color: $secondaryPeach;
 
-    h3 {
-        margin-top: 7dvh;
-        margin-bottom: 5dvh;
-        font-size: 1.5rem;
-        color: $text;
-    }
+    .estetica {
+        display: flex;
+        flex-direction: column;
+        max-width: 1240px;
+        margin: auto;
+        text-align: center;
 
-    p {
-        color: $gray;
-        margin-bottom: 5dvh;
-    }
+        h3 {
+            margin-top: 7dvh;
+            margin-bottom: 5dvh;
+            font-size: 1.5rem;
+            color: $text;
+        }
 
-    .card-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3dvh;
+        p {
+            color: $gray;
+            margin-bottom: 5dvh;
+        }
 
-        .card {
-            box-shadow:  0px -1px 17px -4px rgba(0, 0, 0, 0.45);
-            border-radius: 2dvh;
-            overflow: hidden;
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3dvh;
 
-            .card-img {
-                
+            .card {
+                box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+                border-radius: 2dvh;
+                overflow: hidden;
+
+                img {
+                    transition: transform .8s;
+                    z-index: 8;
+                }
+
+                img:hover {
+                    transform: scale(1.1);
+                }
+
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h4 {
+                        font-size: 1.3rem;
+                        color: $text;
+                        margin-top: 2dvh;
+                    }
+
+                    p {
+                        margin-top: 2dvh;
+                    }
+
+                    button {
+                        margin: 0 auto;
+                        align-items: center;
+                        margin-bottom: 2dvh;
+                        height: 5dvh;
+                        width: 25dvh;
+                        border: none;
+                        border-radius: 2dvh;
+                        background-color: $peach;
+                        color: #fff;
+                        transition: opacity .8s;
+                    }
+
+                    button:hover {
+                        opacity: 50%;
+                    }
+                }
             }
         }
+
+        button {
+            height: 6dvh;
+            width: 35dvh;
+            margin: 0 auto;
+            margin-top: 5dvh;
+            border: none;
+            border-radius: 3dvh;
+            background-color: $peach;
+            color: #fff;
+            transition: opacity .8s;
+        }
+
+        button:hover {
+            opacity: 50%;
+        }
+    }
+}
+
+.procedimentos-background {
+    background-color: $secondaryGray;
+
+    .slider {
+        margin: 0;
+        width: 800px;
+        height: 400px;
     }
 }

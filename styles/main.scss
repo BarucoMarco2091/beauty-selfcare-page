@@ -1,0 +1,98 @@
+@import '../styles/variables.scss';
+
+.treatments {
+    display: flex;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 15dvh;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2dvh;
+        color: $text;
+        font-size: 1.7rem;
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 3dvh;
+        color: $gray;
+    }
+
+    div {
+        flex: 1;
+    }
+
+    .treatments-options {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5dvh;
+        text-align: center;
+        
+        h2 {
+            color: $text;
+            font-size: 1.3rem; 
+        }
+
+        p {
+            color: $gray;
+        }
+
+        img {
+            width: 20dvh;
+            height: 20dvh;
+            object-fit: cover;
+        }
+        
+        .depilacao {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .drenagem-linfatica {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .gordura-localizada {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+.estetica {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: auto;
+    text-align: center;
+
+    h3 {
+        margin-top: 7dvh;
+        margin-bottom: 5dvh;
+        font-size: 1.5rem;
+        color: $text;
+    }
+
+    p {
+        color: $gray;
+        margin-bottom: 5dvh;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3dvh;
+
+        .card {
+            box-shadow:  0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+            border-radius: 2dvh;
+            overflow: hidden;
+
+            .card-img {
+                
+            }
+        }
+    }
+}

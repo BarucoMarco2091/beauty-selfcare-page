@@ -1,0 +1,59 @@
+@import '../styles/variables.scss';
+
+header {
+    background-color: $primaryYellow;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1240px;
+        margin: auto;
+        height: 10dvh;
+
+        .nav-logo {
+            margin-top: 3dvh;
+        }
+
+        .nav-menu {
+            display: flex;
+            margin-top: 3dvh;
+
+            .nav-list {
+                display: flex;
+                gap: 4dvh;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        font-size: 1.3rem;
+                        color: $text;
+                        transition: color .7s;
+                    }
+
+                    a:hover {
+                        color: $primaryGreen;
+                    }
+                }
+            }
+        }
+
+        .nav-btn {
+            margin-top: 3dvh;
+
+            button {
+                height: 6dvh;
+                width: 30dvh;
+                border: solid 1px $primaryBlack;
+                background-color: transparent;
+                transition: color .7s;
+                font-family: 'Roboto', serif;
+                color: $text;
+            }
+
+            button:hover {
+               color: $primaryGreen;
+            }
+        }
+    }
+}

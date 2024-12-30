@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+header {
+  background-color: #F0C002;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: auto;
+  height: 10dvh;
+}
+header nav .nav-logo {
+  margin-top: 3dvh;
+}
+header nav .nav-menu {
+  display: flex;
+  margin-top: 3dvh;
+}
+header nav .nav-menu .nav-list {
+  display: flex;
+  gap: 4dvh;
+}
+header nav .nav-menu .nav-list li {
+  list-style: none;
+}
+header nav .nav-menu .nav-list li a {
+  font-size: 1.3rem;
+  color: #363636;
+  transition: color 0.7s;
+}
+header nav .nav-menu .nav-list li a:hover {
+  color: #23A455;
+}
+header nav .nav-btn {
+  margin-top: 3dvh;
+}
+header nav .nav-btn button {
+  height: 6dvh;
+  width: 30dvh;
+  border: solid 1px #282828;
+  background-color: transparent;
+  transition: color 0.7s;
+  font-family: "Roboto", serif;
+  color: #363636;
+}
+header nav .nav-btn button:hover {
+  color: #23A455;
+}/*# sourceMappingURL=header.css.map */

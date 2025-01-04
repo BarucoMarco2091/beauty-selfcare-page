@@ -1,0 +1,37 @@
+@import '../styles/variables.scss';
+
+footer {
+    background-color: $peach;
+    height: 10dvh;
+    
+    .footer-container {
+        display: flex;
+        max-width: 1240px;
+        margin: auto;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+
+        .footer-icons {
+            margin-top: 5dvh;
+
+            i {
+                color: $secondaryGray;
+                gap: 3dvh;
+                transition: color .8s;
+            }
+
+            i:hover {
+                color: $primaryGreen;
+            }
+        }
+
+        .footer-copyright {
+            margin-top: 5dvh;
+
+            p {
+                color: $secondaryGray;
+            }
+        }
+    }
+}

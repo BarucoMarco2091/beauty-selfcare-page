@@ -1,62 +1,66 @@
 @import '../styles/variables.scss';
 
-.treatments {
-    display: flex;
-    max-width: 1240px;
-    margin: auto;
-    margin-top: 15dvh;
+.treatments-background {
+    background-color: $secondaryGray;
 
-    h1 {
-        text-align: center;
-        margin-bottom: 2dvh;
-        color: $text;
-        font-size: 1.7rem;
-    }
-
-    p {
-        text-align: center;
-        margin-bottom: 3dvh;
-        color: $gray;
-    }
-
-    div {
-        flex: 1;
-    }
-
-    .treatments-options {
+    .treatments {
         display: flex;
-        flex-direction: column;
-        margin-left: 5dvh;
-        text-align: center;
+        max-width: 1240px;
+        margin: auto;
+        padding-top: 15dvh;
 
-        h2 {
+        h1 {
+            text-align: center;
+            margin-bottom: 2dvh;
             color: $text;
-            font-size: 1.3rem;
+            font-size: 1.7rem;
         }
 
         p {
+            text-align: center;
+            margin-bottom: 3dvh;
             color: $gray;
         }
 
-        img {
-            width: 20dvh;
-            height: 20dvh;
-            object-fit: cover;
+        div {
+            flex: 1;
         }
 
-        .depilacao {
+        .treatments-options {
             display: flex;
-            flex-direction: row;
-        }
+            flex-direction: column;
+            margin-left: 5dvh;
+            text-align: center;
 
-        .drenagem-linfatica {
-            display: flex;
-            flex-direction: row;
-        }
+            h2 {
+                color: $text;
+                font-size: 1.3rem;
+            }
 
-        .gordura-localizada {
-            display: flex;
-            flex-direction: row;
+            p {
+                color: $gray;
+            }
+
+            img {
+                width: 20dvh;
+                height: 20dvh;
+                object-fit: cover;
+            }
+
+            .depilacao {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .drenagem-linfatica {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .gordura-localizada {
+                display: flex;
+                flex-direction: row;
+            }
         }
     }
 }
@@ -65,6 +69,7 @@
     display: flex;
     flex-direction: column;
     background-color: $secondaryPeach;
+    padding-bottom: 3dvh;
 
     .estetica {
         display: flex;
@@ -144,8 +149,8 @@
             width: 35dvh;
             margin: 0 auto;
             margin-top: 5dvh;
-            border: none;
             border-radius: 3dvh;
+            border: none;
             background-color: $peach;
             color: #fff;
             transition: opacity .8s;
@@ -158,11 +163,162 @@
 }
 
 .procedimentos-background {
-    background-color: $secondaryGray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+
+    h3 {
+        margin-top: 5dvh;
+        color: $text;
+        font-size: 1.5rem;
+    }
+
+    p {
+        color: $gray;
+        margin-top: 5dvh;
+        margin-bottom: 5dvh;
+    }
 
     .slider {
         margin: 0;
         width: 800px;
         height: 400px;
+        overflow: hidden;
+    }
+
+    .slides {
+        width: 400%;
+        height: 400px;
+        display: flex;
+    }
+
+    .slides input {
+        display: none;
+    }
+
+    .slide {
+        width: 25%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+
+        .slide-text {
+            position: absolute;
+            bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+
+            h3 {
+                font-size: 1.5rem;
+                color: $text;
+                margin-bottom: 10px;
+            }
+        }
+
+        div {
+            flex: 1;
+        }
+    }
+
+    .slide img {
+        width: 800px;
+    }
+
+    .manual-navigation {
+        position: absolute;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manual-btn {
+        border: 2px solid #fff;
+        padding: 5px;
+        border-radius: 16px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .manual-btn:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .manual-btn:hover {
+        background-color: #fff;
+    }
+
+    #radio1:checked~.first {
+        margin-left: 0;
+    }
+
+    #radio2:checked~.first {
+        margin-left: -25%;
+        ;
+    }
+
+    #radio3:checked~.first {
+        margin-left: -50%;
+        ;
+    }
+
+    #radio4:checked~.first {
+        margin-left: -75%;
+        ;
+    }
+
+    .navigation-auto div {
+        border: 2px solid #20a6ff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .navigation-auto {
+        position: absolute;
+        width: 800px;
+        margin-top: 360px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-auto div:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    #radio1:checked~.navigation-auto .auto-btn1 {
+        background-color: #fff;
+    }
+
+    #radio2:checked~.navigation-auto .auto-btn2 {
+        background-color: #fff;
+    }
+
+    #radio3:checked~.navigation-auto .auto-btn3 {
+        background-color: #fff;
+    }
+
+    #radio4:checked~.navigation-auto .auto-btn4 {
+        background-color: #fff;
+    }
+}
+
+.localizacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    h3 {
+        margin-top: 5dvh;
+        margin-bottom: 5dvh;
+        font-size: 1.5rem;
+        color: $text;
     }
 }

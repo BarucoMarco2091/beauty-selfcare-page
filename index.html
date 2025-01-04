@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsivity.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/variables.scss">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/whatsapp-button.css">
     <title>Self Care Page</title>
 </head>
 
@@ -42,91 +44,108 @@
                 <button>Agendar horário</button>
             </div>
         </nav>
-        <img class="banner" src="assets/massage.png" alt="">
+        <img class="banner" src="assets/massage.png" alt="" loading="eager">
     </header>
     <main>
-        <section class="treatments">
-            <div class="treatments-img">
-                <img src="assets/skin.png" alt="">
-            </div>
-            <div class="treatments-content">
-                <h1>Nossos tratamentos</h1>
-                <p>Somos especializados em Tratamentos Estéticos e estamos há 10<br>anos no mercado. Oferecemos o que há de mais moderno, confiável<br>e seguro no mercado da estética.</p>
-                <div class="treatments-options">
-                    <div class="depilacao">
-                        <div class="depilacao-img">
-                            <img src="assets/Depilacao-a-Laser-01-pnzmmtreyp0k49sh7pafmy2dixyfnxdemb4eabrwz4.jpg"
-                                alt="">
+        <section class="treatments-background">
+            <div class="treatments">
+                <div class="treatments-img">
+                    <img src="assets/skin.png" alt="" loading="lazy">
+                </div>
+                <div class="treatments-content">
+                    <h1>Nossos tratamentos</h1>
+                    <p>Somos especializados em Tratamentos Estéticos e estamos há 10<br>anos no mercado. Oferecemos o
+                        que há de mais moderno, confiável<br>e seguro no mercado da estética.</p>
+                    <div class="treatments-options">
+                        <div class="depilacao">
+                            <div class="depilacao-img">
+                                <img src="assets/Depilacao-a-Laser-01-pnzmmtreyp0k49sh7pafmy2dixyfnxdemb4eabrwz4.jpg"
+                                    alt="" loading="lazy">
+                            </div>
+                            <div class="depilacao-text">
+                                <h2>Depilação a Laser</h2>
+                                <p>Depilação a Laser é rápida e quase indolor. Pode ser feita<br>praticamente em todo o
+                                    corpo: buço, rosto, virilha,braços,<br>axilas, perna, abdômen.</p>
+                            </div>
                         </div>
-                        <div class="depilacao-text">
-                            <h2>Depilação a Laser</h2>
-                            <p>Depilação a Laser é rápida e quase indolor. Pode ser feita<br>praticamente em todo o corpo: buço, rosto, virilha,braços,<br>axilas, perna, abdômen.</p>
+                        <div class="drenagem-linfatica">
+                            <div class="drenagem-img">
+                                <img src="assets/Drenagem-Linfatica-pnzmjxfbw31qbk014y6ug6e7l68oxiv77ypi0m2m5s.jpg"
+                                    alt="" loading="lazy">
+                            </div>
+                            <div class="drenagem-text">
+                                <h2>Drenagem Linfática</h2>
+                                <p>Perca medidas, peso e celulite. É uma técnica de<br>massagem em que o objetivo
+                                    principal é estimular a<br>eliminação do excesso de líquido.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="drenagem-linfatica">
-                        <div class="drenagem-img">
-                            <img src="assets/Drenagem-Linfatica-pnzmjxfbw31qbk014y6ug6e7l68oxiv77ypi0m2m5s.jpg"
-                                alt="">
-                        </div>
-                        <div class="drenagem-text">
-                            <h2>Drenagem Linfática</h2>
-                            <p>Perca medidas, peso e celulite. É uma técnica de<br>massagem em que o objetivo principal é estimular a<br>eliminação do excesso de líquido.</p>
-                        </div>
-                    </div>
-                    <div class="gordura-localizada">
-                        <div class="gordura-img">
-                            <img src="assets/Gordura-Localizada-pnzmmayn60ato2js9h5w92t5n8j3dzarvq2oosjsfk.jpg"
-                                alt="">
-                        </div>
-                        <div class="gordura">
-                            <h2>Gordura Localizada</h2>
-                            <p>Indicamos para o tratamento de Gordura Localizada:<br>Criolipólise, Carboxiterapia, Aplicação de Enzimas e<br>Massagem Pró-Detox.</p>
+                        <div class="gordura-localizada">
+                            <div class="gordura-img">
+                                <img src="assets/Gordura-Localizada-pnzmmayn60ato2js9h5w92t5n8j3dzarvq2oosjsfk.jpg"
+                                    alt="" loading="lazy">
+                            </div>
+                            <div class="gordura">
+                                <h2>Gordura Localizada</h2>
+                                <p>Indicamos para o tratamento de Gordura Localizada:<br>Criolipólise, Carboxiterapia,
+                                    Aplicação de Enzimas e<br>Massagem Pró-Detox.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
         </section>
         <section class="estetica-background">
             <section class="estetica">
                 <h3>Estética e Beleza</h3>
-                <p>Confira em nosso blog os principais tratamentos estéticos para seu corpo e saúde de sua pele, além<br>de curiosidades e dicas para melhorar os cuidados com sua beleza.</p>
+                <p>Confira em nosso blog os principais tratamentos estéticos para seu corpo e saúde de sua pele,
+                    além<br>de curiosidades e dicas para melhorar os cuidados com sua beleza.</p>
                 <div class="card-grid">
                     <div class="card">
                         <div class="card-img">
-                            <img src="assets/Harmonizacao-Facial-Mitos-e-verdades-po1dglwszgamcwly52afwgdff42uipha7ad23yn750.jpg" alt="">
+                            <img src="assets/Harmonizacao-Facial-Mitos-e-verdades-po1dglwszgamcwly52afwgdff42uipha7ad23yn750.jpg"
+                                alt="" loading="lazy">
                         </div>
                         <div class="card-body">
                             <h4>Harmonização Facial: Mitos e verdades</h4>
-                            <p>A Harmonização está em alta para corrigir<br>alguns detalhes no rosto, como rugas e linhas<br>de expressão. Confira abaixo os principais<br>mitos e verdades sobre.</p>
+                            <p>A Harmonização está em alta para corrigir<br>alguns detalhes no rosto, como rugas e
+                                linhas<br>de expressão. Confira abaixo os principais<br>mitos e verdades sobre.</p>
                             <button>Quero saber como</button>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-img">
-                            <img src="assets/Alimentacao-saudavel-e-atividade-fisica-02-po1dhit5mnjnn9a5syidtq2k7lkp043vzt71wnaf38.jpg" alt="">
+                            <img src="assets/Alimentacao-saudavel-e-atividade-fisica-02-po1dhit5mnjnn9a5syidtq2k7lkp043vzt71wnaf38.jpg"
+                                alt="" loading="lazy">
                         </div>
                         <div class="card-body">
                             <h4>Alimentação saudável e atividade física</h4>
-                            <p>Os tratamentos estéticos obtém melhores<br>resultados sendo associados a uma boa<br>alimentação e a atividade física. Saiba como e<br>por quê?</p>
+                            <p>Os tratamentos estéticos obtém melhores<br>resultados sendo associados a uma
+                                boa<br>alimentação e a atividade física. Saiba como e<br>por quê?</p>
                             <button>Quero saber como</button>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-img">
-                            <img src="assets/Como-cuidar-do-melasma-no-verao-po1dhd64hnbxplicpw2merhsnachpxhhz1a50zis4k.jpg" alt="">
+                            <img src="assets/Como-cuidar-do-melasma-no-verao-po1dhd64hnbxplicpw2merhsnachpxhhz1a50zis4k.jpg"
+                                alt="" loading="lazy">
                         </div>
                         <div class="card-body">
                             <h4>Como cuidar do melasma no verão</h4>
-                            <p>Confira algumas dicas de cuidados para a sua<br>pele durante o verão e diminua as chances do<br>melasma apresentar piora nessa época do ano.</p>
+                            <p>Confira algumas dicas de cuidados para a sua<br>pele durante o verão e diminua as chances
+                                do<br>melasma apresentar piora nessa época do ano.</p>
                             <button>Quero saber como</button>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-img">
-                            <img src="assets/Como-tratar-o-envelhecimento-facial-po1dhaclx582qrmg6cuqpa7ev4qe2u6aynbol5myn8.jpg" alt="">
+                            <img src="assets/Como-tratar-o-envelhecimento-facial-po1dhaclx582qrmg6cuqpa7ev4qe2u6aynbol5myn8.jpg"
+                                alt="" loading="lazy">
                         </div>
                         <div class="card-body">
                             <h4>Como tratar o envelhecimento facial</h4>
-                            <p>O envelhecimento facial é considerado um dos<br>piores inimigos da beleza. A seguir, você<br>encontra informações sobre as causas e<br>principais tratamentos contra este problema.</p>
+                            <p>O envelhecimento facial é considerado um dos<br>piores inimigos da beleza. A seguir,
+                                você<br>encontra informações sobre as causas e<br>principais tratamentos contra este
+                                problema.</p>
                             <button>Quero saber como</button>
                         </div>
                     </div>
@@ -136,7 +155,9 @@
         </section>
         <section class="procedimentos-background">
             <h3>Procedimentos realizados</h3>
-            <p>Nós da SoftCary, nos preocupamos em oferecer um ambiente agradável, profissionais especializados<br>e tratamentos modernos, garantindo assim plena satisfação a quem procura nossos serviços.<br>Conheça um pouco mais do nosso trabalho através de vídeos!</p>
+            <p>Nós da SoftCary, nos preocupamos em oferecer um ambiente agradável, profissionais especializados<br>e
+                tratamentos modernos, garantindo assim plena satisfação a quem procura nossos serviços.<br>Conheça um
+                pouco mais do nosso trabalho através de vídeos!</p>
             <div class="slider">
                 <div class="slides">
                     <input type="radio" name="radio-btn" id="radio1">
@@ -144,15 +165,24 @@
                     <input type="radio" name="radio-btn" id="radio3">
 
                     <div class="slide first">
-                        <img src="assets/Procedimento-de-Criolipolise.jpg" alt="">
+                        <img src="assets/Procedimento-de-Criolipolise.jpg" alt="" loading="lazy">
+                        <div class="slide-text">
+                            <h3>Procedimento de Drenagem</h3>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="assets/Procedimento-de-Drenagem.jpg" alt="">
+                        <img src="assets/Procedimento-de-Drenagem.jpg" alt="" loading="lazy">
+                        <div class="slide-text">
+                            <h3>Procedimento de Criolipólise</h3>
+                        </div>
                     </div>
                     <div class="slide">
-                        <img src="assets/Procedimento-de-Peeling.jpg" alt="">
+                        <img src="assets/Procedimento-de-Peeling.jpg" alt="" loading="lazy">
+                        <div class="slide-text">
+                            <h3>Procedimento de Peeling</h3>
+                        </div>
                     </div>
-                    <div class="navigation-btn">
+                    <div class="navigation-auto">
                         <div class="auto-btn1"></div>
                         <div class="auto-btn2"></div>
                         <div class="auto-btn3"></div>
@@ -165,8 +195,24 @@
                 </div>
             </div>
         </section>
+        <section class="localizacao">
+            <h3>Venha nos conhecer</h3>
+            <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1255.2117009035312!2d-46.4602657357556!3d-23.665020115186834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce69699228dbd3%3A0xbf44e0184acea628!2sCine%20Ara%C3%BAjo%20-%20Mau%C3%A1%20Plaza%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1736014431767!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright &copy; 2025</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://api.whatsapp.com/send?phone=55119962210403&text=Quero%20fazer%20um%20agendamento%20hoje!" class="whatsapp-btn" target="_blank"><img src="assets/whatssapp.svg" alt="whatsapp-img" loading="lazy" data-aos="zoom-in-up" data-aos-delay="400"><span>Agende seu horário</span></a>
     <script src="script/script.js"></script>
 </body>
 

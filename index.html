@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Somos especializados em Tratamentos Estéticos e estamos há 10 anos no mercado. Oferecemos o que há de mais moderno, confiável e seguro no mercado da estética.">
+    <meta name="keywords" content="estética drenagem criolipolise depilacao peeling">
     <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -15,12 +19,13 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/whatsapp-button.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Self Care Page</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav data-aos="fade-up">
             <div class="nav-logo">
                 <i class="fa-solid fa-syringe">SelfCare Clinic</i>
             </div>
@@ -43,16 +48,35 @@
             <div class="nav-btn">
                 <button>Agendar horário</button>
             </div>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav_item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">A SelfCare</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">Nossos Serviços</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">Vídeos</a>
+                </li>
+            </ul>
+        </div>
         <img class="banner" src="assets/massage.png" alt="" loading="eager">
     </header>
     <main>
         <section class="treatments-background">
             <div class="treatments">
-                <div class="treatments-img">
+                <div class="treatments-img" data-aos="fade-up">
                     <img src="assets/skin.png" alt="" loading="lazy">
                 </div>
-                <div class="treatments-content">
+                <div class="treatments-content" data-aos="fade-down">
                     <h1>Nossos tratamentos</h1>
                     <p>Somos especializados em Tratamentos Estéticos e estamos há 10<br>anos no mercado. Oferecemos o
                         que há de mais moderno, confiável<br>e seguro no mercado da estética.</p>
@@ -95,7 +119,7 @@
 
         </section>
         <section class="estetica-background">
-            <section class="estetica">
+            <section class="estetica" data-aos="flip-left" data-aos-duration="3000">
                 <h3>Estética e Beleza</h3>
                 <p>Confira em nosso blog os principais tratamentos estéticos para seu corpo e saúde de sua pele,
                     além<br>de curiosidades e dicas para melhorar os cuidados com sua beleza.</p>
@@ -153,7 +177,8 @@
                 <button>Todas as notícias</button>
             </section>
         </section>
-        <section class="procedimentos-background">
+        <section class="procedimentos-background" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0">
             <h3>Procedimentos realizados</h3>
             <p>Nós da SoftCary, nos preocupamos em oferecer um ambiente agradável, profissionais especializados<br>e
                 tratamentos modernos, garantindo assim plena satisfação a quem procura nossos serviços.<br>Conheça um
@@ -195,12 +220,15 @@
                 </div>
             </div>
         </section>
-        <section class="localizacao">
+        <section class="localizacao" data-aos="flip-left" data-aos-duration="2000">
             <h3>Venha nos conhecer</h3>
-            <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1255.2117009035312!2d-46.4602657357556!3d-23.665020115186834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce69699228dbd3%3A0xbf44e0184acea628!2sCine%20Ara%C3%BAjo%20-%20Mau%C3%A1%20Plaza%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1736014431767!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe width="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1255.2117009035312!2d-46.4602657357556!3d-23.665020115186834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce69699228dbd3%3A0xbf44e0184acea628!2sCine%20Ara%C3%BAjo%20-%20Mau%C3%A1%20Plaza%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1736014431767!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
-    <footer>
+    <footer data-aos="zoom-out-right">
         <div class="footer-container">
             <div class="footer-icons">
                 <i class="fa-brands fa-instagram"></i>
@@ -212,7 +240,10 @@
             </div>
         </div>
     </footer>
-    <a href="https://api.whatsapp.com/send?phone=55119962210403&text=Quero%20fazer%20um%20agendamento%20hoje!" class="whatsapp-btn" target="_blank"><img src="assets/whatssapp.svg" alt="whatsapp-img" loading="lazy" data-aos="zoom-in-up" data-aos-delay="400"><span>Agende seu horário</span></a>
+    <a href="https://api.whatsapp.com/send?phone=55119962210403&text=Quero%20fazer%20um%20agendamento%20hoje!"
+        class="whatsapp-btn" target="_blank"><img src="assets/whatssapp.svg" alt="whatsapp-img" loading="lazy"
+            data-aos="zoom-in-up" data-aos-delay="400"><span>Agende seu horário</span></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script/script.js"></script>
 </body>
 

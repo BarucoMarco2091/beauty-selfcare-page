@@ -17,12 +17,14 @@ footer {
 
             i {
                 color: $secondaryGray;
+                font-size: 1.2rem;
                 gap: 3dvh;
                 transition: color .8s;
             }
 
             i:hover {
                 color: $primaryGreen;
+                transform: scale(1.1);
             }
         }
 

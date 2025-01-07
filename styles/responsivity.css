@@ -1,1 +1,74 @@
-@im;/*# sourceMappingURL=responsivity.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex !important;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  #mobile_nav_list {
+    position: relative;
+    z-index: 22;
+  }
+  a {
+    color: #fff;
+  }
+}
+@media screen and (max-width: 600px) {
+  #mobile_btn {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .treatments {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .treatments .treatments-options {
+    display: flex;
+    margin: 2dvh 2dvh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    margin: 2dvh 2dvh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .procedimentos-background {
+    text-align: center;
+    margin: 2dvh 2dvh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slide img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slide-text {
+    position: absolute;
+    left: 200px;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-icons {
+    margin-left: 2dvh;
+  }
+  .footer-copyright {
+    margin-right: 2dvh;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .nav-list {
+    display: none !important;
+  }
+}/*# sourceMappingURL=responsivity.css.map */

@@ -17,11 +17,13 @@ footer .footer-container .footer-icons {
 }
 footer .footer-container .footer-icons i {
   color: #f2f2f2;
+  font-size: 1.2rem;
   gap: 3dvh;
   transition: color 0.8s;
 }
 footer .footer-container .footer-icons i:hover {
   color: #23A455;
+  transform: scale(1.1);
 }
 footer .footer-container .footer-copyright {
   margin-top: 5dvh;

@@ -47,6 +47,36 @@ header nav .nav-btn button {
 header nav .nav-btn button:hover {
   color: #23A455;
 }
+header nav #mobile_btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+header #mobile_menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+  padding: 1rem;
+}
+header #mobile_menu.active {
+  display: flex;
+}
+header #mobile_menu #mobile_nav_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+  text-align: center;
+}
+header #mobile_menu .nav_item {
+  font-size: 1rem;
+}
 header .banner {
   filter: brightness(50%);
 }/*# sourceMappingURL=header.css.map */

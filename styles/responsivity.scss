@@ -1,1 +1,88 @@
-@import '../styles/responsivity.scss';
+@import '../styles/variables.scss';
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex !important;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mobile_nav_list {
+        position: relative;
+        z-index: 22;
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mobile_btn {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .treatments {
+        display: flex;
+        flex-direction: column ;
+        text-align: center;
+
+        .treatments-options {
+            display: flex;
+            margin: 2dvh 2dvh;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        margin: 2dvh 2dvh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .procedimentos-background {
+        text-align: center;
+        margin: 2dvh 2dvh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .slide-text {
+        position: absolute;
+        left: 200px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer-icons {
+        margin-left: 2dvh;
+    }
+
+    .footer-copyright {
+        margin-right: 2dvh;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .nav-list {
+        display: none !important;
+    }
+}
+
